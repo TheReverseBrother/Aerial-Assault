@@ -1,0 +1,16 @@
+body
+{
+    background-color: cornflowerblue;
+}
+#arena 
+{
+    margin: 0 auto;
+    margin-top: 50px;
+    width:800px;
+    height: 520px;
+}
+
+#game-canvas
+{
+    border: 5px solid yellow;
+}

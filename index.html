@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <style>
+        canvas {
+            border:3px solid black;
+            background-color: deepskyblue;
+        }
+    </style>
+    <link rel="stylesheet" href="aerialAssault.css">
+</head>
+<body>
+<div align="center">
+<canvas id = 'aerial-canvas' width='680' height ='300'>
+</canvas>
+</div>
+<script src ='javascript/character.js'></script>
+<script src ='aerialAssault.js'></script>
+
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->
+    <!--<style>-->
+        <!--canvas {-->
+            <!--border:1px solid #d3d3d3;-->
+            <!--background-color: #f1f1f1;-->
+        <!--}-->
+    <!--</style>-->
+<!--</head>-->
+<!--<body onload="startGame()">-->
+<!--<script src ='javascript/character.js'></script>-->
+<!--<script>-->
+
+    <!--var myGamePiece;-->
+    <!--var enemy1;-->
+    <!--var enemy2;-->
+    <!--var enemy3;-->
+    <!--var enemy4;-->
+
+
+    <!--function startGame()-->
+    <!--{-->
+    <!--myGameArea.start();-->
+    <!--myGamePiece = new gdcharacter(myGameArea.context,30, 10, "blue", 30, 120);-->
+    <!--enemy1 = new gcharacter(myGameArea.context,30,10,"red", 520,150);-->
+    <!--enemy2 = new gcharacter(myGameArea.context,30,10,"green", 530,100);-->
+    <!--enemy3 = new gcharacter(myGameArea.context,30,10,"yellow", 500,250);-->
+    <!--enemy4 = new gcharacter(myGameArea.context,30,10,"orange", 520,50);-->
+    <!--}-->
+
+    <!--var myGameArea = {-->
+        <!--canvas : document.createElement("canvas"),-->
+        <!--start : function()-->
+        <!--{-->
+            <!--this.canvas.width = 480;-->
+            <!--this.canvas.height = 270;-->
+            <!--this.context = this.canvas.getContext("2d");-->
+            <!--document.body.insertBefore(this.canvas, document.body.childNodes[0]);-->
+            <!--this.interval = setInterval(updateGameArea, 20);-->
+
+            <!--window.addEventListener('keydown', function (e)-->
+            <!--{-->
+            <!--myGameArea.key = e.keyCode;-->
+            <!--})-->
+            <!--window.addEventListener('keyup', function (e)-->
+            <!--{-->
+            <!--myGameArea.key = false;-->
+            <!--})-->
+        <!--},-->
+        <!--clear : function(){-->
+        <!--this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);-->
+    <!--}-->
+    <!--}-->
+
+    <!--function characterTest(width, height, color, x, y) {-->
+    <!--this.gamearea = myGameArea;-->
+    <!--this.width = width;-->
+    <!--this.height = height;-->
+    <!--this.speedX = 0;-->
+    <!--this.speedY = 0;-->
+    <!--this.x = x;-->
+    <!--this.y = y;-->
+    <!--this.updatePosition = function() {-->
+    <!--ctx = myGameArea.context;-->
+    <!--ctx.fillStyle = color;-->
+    <!--ctx.fillRect(this.x, this.y, this.width, this.height);-->
+    <!--}-->
+    <!--this.moveCharacter = function() {-->
+    <!--this.x += this.speedX;-->
+    <!--this.y += this.speedY;-->
+    <!--}-->
+    <!--}-->
+
+    <!--function updateGameArea()-->
+    <!--{-->
+        <!--myGameArea.clear();-->
+        <!--myGamePiece.setXdirection(0);-->
+        <!--myGamePiece.setYdirection(0);-->
+        <!--enemy1.setXdirection(-1);-->
+        <!--enemy2.setXdirection(-1);-->
+        <!--enemy3.setXdirection(-1);-->
+        <!--enemy4.setXdirection(-1);-->
+        <!--if (myGameArea.key && myGameArea.key == 38) {myGamePiece.setYdirection(-2); }-->
+        <!--if (myGameArea.key && myGameArea.key == 40) {myGamePiece.setYdirection(2); }-->
+        <!--enemy1.moveCharacter();-->
+        <!--enemy2.moveCharacter();-->
+        <!--enemy3.moveCharacter();-->
+        <!--enemy4.moveCharacter();-->
+        <!--enemy1.updatePosition();-->
+        <!--enemy2.updatePosition();-->
+        <!--enemy3.updatePosition();-->
+        <!--enemy4.updatePosition();-->
+        <!--myGamePiece.moveCharacter();-->
+        <!--myGamePiece.updatePosition();-->
+    <!--}-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
